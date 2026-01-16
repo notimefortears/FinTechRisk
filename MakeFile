@@ -1,0 +1,41 @@
+VENV=venv
+PYTHON=$(VENV)/bin/python
+PIP=$(VENV)/bin/pip
+UVICORN=$(VENV)/bin/uvicorn
+python -m uvicorn api.main:app --reload --port 8000
+
+install:
+	python3 -m venv $(VENV)
+	$(PIP) install --upgrade pip
+	$(PIP) install fastapi uvicorn psycopg2-binary pydantic scikit-learn joblib numpy
+
+run:
+	$(UVICORN) api.main:app --reload --port 8000
+
+train:
+	$(PYTHON) models/train_model.py
+
+features:
+	$(PYTHON) features/build_features.py
+
+db:
+	docker-compose up -d
+
+ingest:
+	$(PYTHON) ingestion/ingest_transactions.py
+
+schema:
+	docker exec -i fraud_postgres psql -U frauduser -d frauddb < database/schema.sql
+	docker exec -i fraud_postgres psql -U frauduser -d frauddb < database/features.sql
+
+reset:
+	docker-compose down -v
+
+test:
+	curl http://127.0.0.1:8000/health
+
+all: db schema ingest features train run
+
+restart:
+	pkill -f "uvicorn api.main" || true
+	$(UVICORN) api.main:app --reload --port 8000

@@ -1,0 +1,133 @@
+# =========================
+# Python
+# =========================
+venv/
+.env
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs
+*.log
+logs/
+log/
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# =========================
+# Node / React Dashboard
+# =========================
+dashboard/node_modules/
+dashboard/dist/
+dashboard/build/
+dashboard/.env
+dashboard/.env.local
+dashboard/.cache
+dashboard/npm-debug.log*
+dashboard/yarn-debug.log*
+dashboard/yarn-error.log*
+dashboard/.vite/
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+*.dockerignore
+.env.docker
+
+# =========================
+# Database
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+postgres_data/
+pgdata/
+database/data/
+*.bak
+
+# =========================
+# OS Files
+# =========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# IDEs and Editors
+# =========================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+*.swp
+*.swo
+
+# =========================
+# Testing / Coverage
+# =========================
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# =========================
+# Miscellaneous
+# =========================
+.DS_Store
+.envrc
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.orig
+*.rej
+*.diff

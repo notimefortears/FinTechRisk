@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: fraud_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: frauddb
+      POSTGRES_USER: frauduser
+      POSTGRES_PASSWORD: fraudpass
+    ports:
+      - "5432:5432"
+    volumes:
+      - fraud_pg_data:/var/lib/postgresql/data
+
+volumes:
+  fraud_pg_data:
