@@ -29,7 +29,7 @@ This repository is meant to be a **portfolio-level, high-impact showcase project
 - Frontend dashboard development  
 - System design thinking  
 
-The focus is on:
+
 
 
 
