@@ -1,4 +1,4 @@
-# 🚀 Real-Time Fraud Detection Platform
+# 💀 Real-Time Fraud Detection Platform
 
 > **Enterprise-style, end-to-end fintech fraud detection system built as a portfolio showcase project**
 
