@@ -31,7 +31,7 @@ This repository is meant to be a **portfolio-level, high-impact showcase project
 
 The focus is on:
 
-> **“Build something big, hard, and realistic enough that hiring managers say WOW.”**
+
 
 ---
 
