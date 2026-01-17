@@ -239,6 +239,6 @@ MIT License – free to use for portfolio and learning purposes.
 
 ### ⭐ Final Note
 
-If you are a recruiter or hiring manager:
+If you are a recruiter or hiring manager or my lovely brother:
 
 This project demonstrates the ability to design and implement a complex, realistic, business‑critical system from scratch.
