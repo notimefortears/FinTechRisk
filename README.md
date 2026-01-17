@@ -18,6 +18,9 @@ All designed to look and behave like a **production system solving a serious rea
 
 ---
 
+## 🖼 Architecture Diagram
+
+![Architecture Diagram](docs/image.png)
 ## 🎯 Project Goals
 
 This repository is meant to be a **portfolio-level, high-impact showcase project** demonstrating:
