@@ -162,7 +162,7 @@ def fraud_stats():
 @app.post("/transactions", response_model=TransactionOut)
 def create_transaction(tx: TransactionCreate):
     # NOTE: for now, this endpoint only stores the transaction.
-    # In the next step we will score it with ML + rules and set is_fraud/risk.
+ 
     import uuid
 
     transaction_id = f"tx_{uuid.uuid4().hex}"
@@ -240,7 +240,7 @@ def score_transaction(transaction_id: str):
         prob = score_from_features(feats)
         risk_score = int(round(prob * 100))
 
-        # simple decision policy (we’ll tune later)
+       
         if risk_score >= 90:
             decision = "block"
         elif risk_score >= 60:
