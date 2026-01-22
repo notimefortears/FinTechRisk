@@ -236,7 +236,7 @@ Feel free to fork the project and extend it.
 
 ## 📜 License
 
-MIT License – free to use for portfolio and learning purposes.
+MIT License – free to use for learning purposes.
 
 ---
 
