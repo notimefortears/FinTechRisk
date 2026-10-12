@@ -14,31 +14,29 @@ It demonstrates:
 - Operational dashboard  
 - Full Dockerized deployment  
 
-All designed to look and behave like a **production system solving a serious real-life problem**.
+The implementation combines a transaction simulator, rule-based scoring, a review workflow, and a dashboard for exploring fraud decisions.
 
 ---
 
-## 🖼 Architecture Diagram
+## Architecture Diagram
 
 ![Architecture Diagram](docs/image.png)
-## 🎯 Project Goals
+
+## Project Goals
 
 This repository is meant to be a **portfolio-level, high-impact showcase project** demonstrating:
 
 - Backend engineering  
 - Data engineering  
-- Machine learning logic  
+- Risk scoring logic  
 - DevOps / containerization  
 - Frontend dashboard development  
 - System design thinking  
 
 
-
-
-
 ---
 
-# 🧠 What Problem Does This Solve?
+## What Problem Does This Solve?
 
 Financial fraud costs companies **billions of dollars per year**.
 
@@ -54,7 +52,7 @@ This platform mimics that environment.
 
 ---
 
-# 🏗 System Architecture
+## System Architecture
 
 ```
 +--------------------+
@@ -75,9 +73,9 @@ This platform mimics that environment.
 
 ---
 
-# ⚙ Features Implemented
+## Features Implemented
 
-### ✅ Real-Time Feature Engineering
+### Real-Time Feature Engineering
 
 For every transaction, the system calculates:
 
@@ -91,7 +89,7 @@ For every transaction, the system calculates:
 - Device usage patterns  
 - Foreign country detection  
 
-### 🤖 Fraud Scoring Engine
+### Fraud Scoring Engine
 
 Each transaction receives:
 
@@ -108,16 +106,16 @@ Decision logic:
 
 ---
 
-# 🚀 Quick Start
+## Quick Start
 
-## Prerequisites
+### Prerequisites
 
 - Docker  
 - Docker Compose  
 - Node.js  
 - Python 3.10+  
 
-## 🐳 Run Everything with Docker
+### Run Everything with Docker
 
 From project root:
 
@@ -135,7 +133,7 @@ docker compose -f docker-compose.full.yml up --build
 
 ---
 
-# 🧾 Example Usage
+## Example Usage
 
 ### Score a Transaction
 
@@ -156,7 +154,7 @@ curl -X POST "http://localhost:8000/transactions/score" \
 
 ---
 
-# 📂 Project Structure
+## Project Structure
 
 ```
 fraud-detection-platform/
@@ -181,7 +179,7 @@ fraud-detection-platform/
 
 ---
 
-# 🧩 Technologies Used
+## Technologies Used
 
 ### Backend
 - Python 3.12  
@@ -201,11 +199,11 @@ fraud-detection-platform/
 
 ---
 
-# 🔮 Future Improvements
+## Future Improvements
 
 Possible extensions:
 
-- Replace rules with real ML model  
+- Extend statistical risk scoring  
 - Kafka streaming ingestion  
 - Prometheus monitoring  
 - Authentication system  
@@ -216,32 +214,24 @@ Possible extensions:
 
 ---
 
-# 👤 About This Project
+## About This Project
 
 This platform was built as a **high-impact portfolio project** to demonstrate:
 
 - Full-stack engineering ability  
 - Understanding of real-world fintech problems  
 - System design skills  
-- Practical machine learning application  
+- Practical statistical analysis  
 - Production mindset  
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to fork the project and extend it.
 
 ---
 
-## 📜 License
+## License
 
 MIT License – free to use for learning purposes.
-
----
-
-### ⭐ Final Note
-
-If you are a recruiter or hiring manager or my lovely brother:
-
-This project demonstrates the ability to design and implement a complex, realistic, business‑critical system from scratch.
